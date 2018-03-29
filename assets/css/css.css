@@ -1,0 +1,102 @@
+BODY
+{
+	font-size: 18px;
+	font-family: Roboto Condensed, Helvetica Neue, Arial, sans;
+	font-weight: 300;
+	line-height: 1.5;
+	margin: 0;
+	width: 100%;
+}
+
+section, header
+{
+	padding-top: 2em;
+	padding-bottom: 2em;
+}
+
+em
+{
+	font-weight: bold;
+	font-style: normal;
+}
+
+p, h1, h2, h3, img
+{
+	max-width: 40rem;
+	padding-left: 2rem;
+	padding-right: 2rem;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+A
+{
+	text-decoration: none;
+	color: #fffa00;
+	border: 4px solid #fffa00;
+	padding: 0.5rem 1rem;
+	margin: 1rem .5rem;
+	display: block;
+}
+
+h1
+{
+	background-image: url('/assets/images/logo.png');
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: 2rem 0;
+	height: 4rem;
+	font-size: 3rem;
+	font-weight: 300;
+	padding-left: 2rem;
+	padding-top: 0;
+	padding-bottom: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+h1 A 
+{
+	display: none;
+}
+
+h2
+{
+	font-weight: 300;
+	line-height: 1;
+	margin-top: 0;
+	margin-bottom: 0.5rem;
+	font-size: 48px;
+}
+
+.black
+{
+	background-color: black;
+	color: white;
+}
+
+.white
+{
+	background-color: white;
+	color: black;				
+}
+
+.dark
+{
+	color: white;
+	background-color: #444;
+}
+
+.highlight
+{
+	background: #e33813; /* Old browsers */
+	background: -moz-linear-gradient(-25deg, #e33813 0%, #fecf16 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(-25deg, #e33813 0%,#fecf16 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(155deg, #e33813 0%,#fecf16 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	color: black;
+}
+
+.highlight em
+{
+	color: white;
+}
