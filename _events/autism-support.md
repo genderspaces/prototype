@@ -5,7 +5,7 @@ title: Individual support for autistic people
 # Summary information
 quick-description: Private sessions with our expert volunteers
 
-audience: "Autistic people. You do not need to have been diagnosed."
+audience: "Autistic people. You do not need a diagnosis."
 also-welcome: ""
 
 venue-name: "Nottingham City Asperger Service"

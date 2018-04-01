@@ -1,3 +1,28 @@
+# General site configuration
+title: Gender Spaces Nottingham
+location: Nottingham
+url: "http://127.0.0.1:4000/" 
+
+# Colour theme
+theme_colour1: "#38d323" # darker shade
+theme_colour2: "#cffe16" # lighter shade
+
+# Social media links
+twitter_username: genderspaces
+facebook_username: genderspaces
+instagram_username: genderspaces
+tumblr_username: genderspaces
+
+
+
+
+# -----------------------------------------------------------------
+# WARNING! HERE BE DRAGONS!
+# -----------------------------------------------------------------
+# 
+# Only edit below this line if you know how to configure Jekyll!
+# Editing this can break your site.
+
 # Welcome to Jekyll!
 #
 # This config file is meant for settings that affect your whole blog, values
@@ -13,18 +38,14 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Gender Spaces Nottingham
+
 description: >- # this means to ignore newlines until "baseurl:"
   Description would go here
-location: Nottingham
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://127.0.0.1:4000/" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: genderspaces
-facebook_username: genderspaces
-instagram_username: genderspaces
-tumblr_username: genderspaces
 
 permalink: pretty
+stylus:
+  compress: true
 
 # Build settings
 markdown: kramdown
