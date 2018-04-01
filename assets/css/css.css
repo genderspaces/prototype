@@ -8,7 +8,7 @@ BODY
 	width: 100%;
 }
 
-section, header
+section
 {
 	padding-top: 2em;
 	padding-bottom: 2em;
@@ -20,7 +20,7 @@ em
 	font-style: normal;
 }
 
-p, h1, h2, h3, img
+p, h1, h2, h3, img, ul, ol
 {
 	max-width: 40rem;
 	padding-left: 2rem;
@@ -29,33 +29,62 @@ p, h1, h2, h3, img
 	margin-right: auto;
 }
 
-A
+.small
 {
-	text-decoration: none;
-	color: #fffa00;
-	border: 4px solid #fffa00;
-	padding: 0.5rem 1rem;
-	margin: 1rem .5rem;
-	display: block;
+	font-size: 1.25rem;
+	padding: 1rem;
+    background: rgba(255,255,255,0.5);
+    max-width: 20rem;
+    margin: 2rem 0 0 0;
+}
+
+.small li 
+{
+    padding: 0;
+    margin-left: 0;
+    list-style-type: none;
+}
+
+.hidden
+{
+	display: none;
+}
+
+.button
+{
+	border: 2px solid #f80;
+    padding: 1rem;
+    margin-top: 1rem;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    background-color: #fc0;
+    display: inline-block;
+}
+
+li
+{
+	margin-left: 2rem;
 }
 
 h1
 {
-	background-image: url('/assets/images/logo.png');
-	background-repeat: no-repeat;
-	background-size: contain;
-	background-position: 2rem 0;
-	height: 4rem;
 	font-size: 3rem;
 	font-weight: 300;
-	padding-left: 2rem;
-	padding-top: 0;
-	padding-bottom: 0;
-	margin-top: 0;
-	margin-bottom: 0;
 }
 
 h1 A 
+{
+	background-image: url('/assets/images/logo.png');
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: 0;
+	height: 4rem;
+	width: 18rem;
+	display: block;
+}
+
+h1 A span
 {
 	display: none;
 }
@@ -69,10 +98,35 @@ h2
 	font-size: 48px;
 }
 
+p, h3
+{
+	margin-top: 0.25rem;
+	margin-bottom: 0.25rem;
+}
+
+h3
+{
+	display: flex;
+	align-items: center; /* Vertically centre text next to icons */
+}
+
+.icon
+{	
+	margin-right: 0.5rem;
+	font-style: normal;
+}
+
+/* Coloured section styling */
+
 .black
 {
 	background-color: black;
 	color: white;
+}
+
+.black a
+{
+	color: #fa0;
 }
 
 .white
@@ -87,6 +141,11 @@ h2
 	background-color: #444;
 }
 
+.dark a
+{
+	color: white;
+}
+
 .highlight
 {
 	background: #e33813; /* Old browsers */
@@ -96,7 +155,122 @@ h2
 	color: black;
 }
 
+.highlight a
+{
+	color: black;
+}
+
 .highlight em
 {
 	color: white;
+}
+
+/* Footer */
+
+.sociallinks
+{
+	display: flex;
+	flex-direction: row;
+	margin: 0 auto;
+}
+
+.sociallinks li
+{
+	list-style-type: none;
+	margin: 0 .5rem 0 0;
+}
+
+.footerlogo
+{
+	height: 3rem;
+	padding: 0;
+	margin: 0;
+	margin-bottom: .25rem;
+}
+
+/* Event details page */
+.venuesummary
+{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	padding: 0 2rem;
+	justify-content: flex-start;
+	margin-bottom: 0;
+	line-height: 1.25;
+}
+
+.venuesummary li
+{
+	list-style-type: none;
+	width: 8rem;
+	padding: 0;
+	margin: 0 1rem 2rem 0;
+}
+
+.venuesummary li ul, .venuesummary li p
+{
+	margin: 0;
+	padding: 0;
+}
+
+.venuesummary li h3
+{
+	margin: 0 0 .5rem 0;
+	padding: 0;
+	line-height: 1;
+}
+
+.venuesummary li li
+{
+	margin: 0;
+}
+
+/* Venue details page */
+
+.venue-nav
+{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	padding: 0;
+	justify-content: space-evenly;
+	margin-bottom: 0;
+}
+
+.venue-nav a
+{
+	color: inherit;
+	text-decoration: none;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	line-height: 1;
+}
+
+.venue-nav li
+{
+	list-style-type: none;
+	width: 7rem;
+	padding: 0;
+	margin: 0;
+	background-color: rgba(0,0,0,0.1);
+	margin-bottom: 1rem;
+}
+
+
+.venue-nav .icon
+{
+	margin-right: 0;
+	margin-bottom: 1rem;
+	background-color: rgba(0,0,0,0.1);
+	width: 100%;
+	padding: 1rem 0;
+}
+
+.venue-nav span
+{
+	margin-bottom: 1rem;
+	padding: 0 .5rem;
 }
