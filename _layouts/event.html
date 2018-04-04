@@ -39,12 +39,12 @@ layout: page
 			<h3><i class="fas fa-clock fa-2x icon"></i><span>When is it?</span></h3>
 			<ul>
 				<li>{{ page.day }}</li>
-				<li>{{ page.time }}</li>
+				<li>{{ page.time-start }} - {{ page.time-end }}</li>
 				<li>{{ page.frequency }}</li>
 			</ul>
 		</li>
 		<li>
-			<h3><i class="fa-2x icon">£</i><span>Cost</span></h3>
+			<h3><i class="fas fa-pound-sign fa-2x icon"></i><span>Cost</span></h3>
 			{% if page.free %}
 			<p>Free</p>
 			{% else %}
@@ -67,12 +67,28 @@ layout: page
 		</li>
 	</ul>
 </section>
+{% include inclusivity.html %}
 <section>
 {{ content }}
 </section>
-<section class="dark">
-<h3>Rules</h3>
-<p>Icon grid for rules for the space would go here when the icons are designed.</p>
+<section class="dark" id="rules">
+<h3 class="rulesheader">Not allowed</h3>
+	<ul class="rules">
+	{% for rule in page.forbidden %}
+		{% if site.data.rules.rules[rule] %}
+		<li>
+			{% if site.data.rules.rules[rule].icon %}
+			<img class="fa-4x icon" src="/assets/icons/{{ site.data.rules.rules[rule].icon }}.svg"></img>
+			{% else %}
+			<i class="fas fa-square fa-4x icon"></i>
+			{% endif %}
+			<h3>{{ site.data.rules.rules[rule].title }}</h3>
+			{% if site.data.rules.rules[rule].note %}
+			<p>{{ site.data.rules.rules[rule].note }}</p>
+			{% endif %}
+		</li>
+		{% endif %}
+	{% endfor %}
 </section>
 <section class="black">
 <h3>More information</h3>

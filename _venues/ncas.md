@@ -7,7 +7,7 @@ address: "The Pines, Highbury Hospital"
 postcode: "NG6 9DR"
 
 buses: "Highbury Hospital bus stop is around 200m walk away from the venue. The 68 and 69 buses buses serve this stop and travel to/from central Nottingham."
-tram: "The nearest tram stop is Highbury Vale, around 1km walk away."
+tram: "The nearest tram stop is Highbury Vale, around 1km walk away. Highbury Vale is normally served by all services on the NET tram network."
 public-transport-greeting: true
 
 car-parking: "Free car parking is available."

@@ -3,9 +3,9 @@
 title: Individual support for autistic people
 
 # Summary information
-quick-description: Private sessions with our expert volunteers
+quick-description: Private sessions to talk about your gender with expert volunteers
 
-audience: "Autistic people. You do not need a diagnosis."
+audience: "Autistic people. You do not need an autism diagnosis to come."
 also-welcome: ""
 
 venue-name: "Nottingham City Asperger Service"
@@ -13,7 +13,8 @@ venue-page: "ncas"
 venue-postcode: "NG6 9DR"
 
 day: "Tuesday"
-time: "18:00"
+time-start: "18:00"
+time-end: "20:00"
 frequency: "Twice monthly"
 
 free: true
@@ -21,7 +22,26 @@ cost: "n/a"
 
 contact: "genderspaces@gmail.com"
 
-# TODO: rules stuff
+# Rules for the event
+
+forbidden:
+    - "touching"
+    - "photo-or-video"
+    - "streaming"
+    - "offensive-language"
+    - "alcohol"
+    - "drugs"
+    - "intoxication"
+    - "smoking"
+    - "vaping"
+    - "weapons"
+    - "pornography"
+    - "nudity"
+
+minimum-age: 16
+
+own-food-allowed: true
+own-drink-allowed: true
 
 ---
 

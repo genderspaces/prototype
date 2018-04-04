@@ -1,0 +1,47 @@
+rules:
+  alcohol:
+    title: Alcohol
+    icon: alcohol
+  drugs:
+    title: Drugs
+    note: except prescription medication
+    icon: drugs
+  intoxication:
+    title: Being drunk
+    note: or otherwise intoxicated
+    icon: drunk
+  smoking:
+    title: Smoking
+    icon: smoking
+  vaping:
+    title: Vaping
+    note: or e-cigarettes
+    icon: vaping
+  weapons:
+    title: Weapons
+    note: or toys shaped like them
+    icon: knife
+  offensive-language:
+    title: Offensive words
+    note: if you're not sure, ask first
+    icon: offensive
+  photo-or-video:
+    title: Camera use
+    note: photos and videos
+    icon: camera
+  streaming:
+    title: Live streaming
+    icon: video
+  speakerphone:
+    title: Speakerphone
+  pornography:
+    title: Pornography
+    icon: pornography
+  nudity: 
+    title: Nudity
+    note: keep nipples and genitals covered
+    icon: nudity
+  touching:
+    title: Touching others
+    note: unless invited to
+    icon: touching

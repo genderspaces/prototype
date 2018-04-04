@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;}
+	.st1{fill:#616161;}
+	.st2{fill:#CFCFCF;}
+	.st3{fill:#363636;}
+	.st4{fill:#969696;}
+	.st5{fill:#303030;}
+	.st6{fill:#CCCCCC;}
+</style>
+<g id="Layer_1_1_">
+	<path class="st0" d="M256,0c35.3,0,64,28.7,64,64s-28.7,64-64,64s-64-28.7-64-64S220.7,0,256,0 M304,144h-11.4
+		c-22.7,10.4-49.6,10.9-73.3,0H208c-26.5,0-48,21.5-48,48v136c0,13.3,10.7,24,24,24h16v136c0,13.3,10.7,24,24,24h64
+		c13.3,0,24-10.7,24-24V352h16c13.3,0,24-10.7,24-24V192C352,165.5,330.5,144,304,144z"/>
+</g>
+<g id="Layer_2_1_">
+	<g>
+		<rect x="180" y="310" class="st1" width="48" height="48"/>
+		<rect x="228" y="310" width="48" height="48"/>
+		<rect x="228" y="310" class="st2" width="48" height="48"/>
+		<rect x="276" y="310" class="st3" width="48" height="48"/>
+		<rect x="180" y="358" class="st4" width="48" height="48"/>
+		<rect x="228" y="358" width="48" height="48"/>
+		<rect x="228" y="358" class="st5" width="48" height="48"/>
+		<rect x="276" y="358" class="st6" width="48" height="48"/>
+	</g>
+	<rect x="200" y="210" class="st1" width="48" height="48"/>
+	<rect x="267" y="209" class="st3" width="48" height="48"/>
+</g>
+</svg>
