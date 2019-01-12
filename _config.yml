@@ -1,10 +1,10 @@
 # General site configuration
-title: Gender Spaces Nottingham
+title: Gender Spaces
 location: Nottingham
 url: "http://127.0.0.1:4000/" 
 
 # Colour theme
-theme_colour1: "#00a65c" # darker shade
+theme_colour1: "#04A75C" # darker shade
 theme_colour2: "#a5ff30" # lighter shade
 
 # Social media links

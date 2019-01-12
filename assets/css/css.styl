@@ -2,33 +2,40 @@
 ---
 
 // Colours
-$theme1 = {{ site.theme_colour1 }}
-$theme2 = {{ site.theme_colour2 }}
+$themeColour = {{ site.theme_colour1 }}
+$themeColourLight = {{ site.theme_colour2 }}
 
 // Fonts
-@font-face {
-    font-family: 'clarikageo-medium';
+@font-face 
+    font-family: 'clarikageo-medium'
     src: url('clarikageo-medium-webfont.woff2') format('woff2'),
-         url('clarikageo-medium-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'clarikageo-medium-it';
+         url('clarikageo-medium-webfont.woff') format('woff')
+    font-weight: normal
+    font-style: normal
+@font-face
+    font-family: 'clarikageo-medium-it'
     src: url('clarikageo-medium-it-webfont.woff2') format('woff2'),
-         url('clarikageo-medium-it-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
+         url('clarikageo-medium-it-webfont.woff') format('woff')
+    font-weight: normal
+    font-style: normal
 
 body
-	font-size: 18px;
-	font-family: 'Clarika Geometric Medium', Helvetica Neue, Arial, sans;
-	font-weight: 300;
-	line-height: 1.5;
-	margin: 0;
-	width: 100%;
+	font-size: 18px
+	font-family: 'Clarika Geometric Medium', 'Helvetica Neue', Arial, sans
+	font-weight: 300
+	line-height: 1.5
+	margin: 0
+	width: 100%
+
+a, a:visited, a:hover
+	color: $themeColour
+
+h1
+	a
+		text-decoration: none
+
+h2
+	font-style: italic
 
 @import "assets/css/header.styl"
 @import "assets/css/page.styl"
