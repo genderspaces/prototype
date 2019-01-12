@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+        <meta name="viewport" content="width=device-width">
+        <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/solid.js" integrity="sha384-P4tSluxIpPk9wNy8WSD8wJDvA8YZIkC6AQ+BfAFLXcUZIPQGu4Ifv4Kqq+i2XzrM" crossorigin="anonymous"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.0.9/js/fontawesome.js" integrity="sha384-2IUdwouOFWauLdwTuAyHeMMRFfeyy4vqYNjodih+28v2ReC+8j+sLF9cK339k5hY" crossorigin="anonymous"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.0.9/js/brands.js" integrity="sha384-qJKAzpOXfvmSjzbmsEtlYziSrpVjh5ROPNqb8UZ60myWy7rjTObnarseSKotmJIx" crossorigin="anonymous"></script>
+
+
+<style>
+    body 
+    {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        font-family: Clarika Geometric Medium;
+    }
+    h1, h2
+    {
+        font-size: 2rem;
+        margin: 0;
+        line-height: 1;
+    }
+    h2
+    {
+        font-size: 1.5rem;
+        color: #04A75C; //#0057AF;
+    }
+    a
+    {
+        color: #04A75C;
+    }
+    #one, #two, #main
+    {
+        padding: 1rem 1rem;
+    }
+
+    #one
+    {
+        background-color: black;
+        color: white;
+    }
+    #two
+    {
+        border: 16px solid grey;
+        border-left: 0;
+        border-right: 0;
+        border-image-source: url('diagonals3.png');
+        border-image-slice: 74 0 74 0;
+        border-image-repeat: round;
+        background-color: #04A75C;
+        color: white;
+        background-image: url('pool2.jpg');
+        background-origin: border-box;
+        background-size: cover;
+    }
+    #main
+    {
+        max-width: 48rem;
+    }
+    .pull
+    {
+        font-size: 2rem;
+        color: white;
+        text-shadow: 1px 1px 2px black;
+        font-style: italic;
+        max-width: 36rem;
+        padding-bottom: 1rem;
+    }
+
+    @media screen and (min-width: 740px) {
+    #one, #two, #main
+    {
+        padding: 2rem 4rem;
+    }
+    .pull
+    {
+        font-size: 3rem;
+    }
+    }
+
+.venuesummary
+{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	padding: 0;
+	justify-content: space-between;
+	margin-bottom: 0;
+	line-height: 1.25;
+}
+
+.venuesummary li
+{
+    max-width: 24rem;
+	list-style-type: none;
+	padding: 0;
+	margin: 0 1rem 2rem 0;
+}
+
+.venuesummary li ul, .venuesummary li p
+{
+	margin: 0;
+	padding: 0;
+}
+
+
+.venuesummary li h3
+{
+	margin: 0 0 .5rem 0;
+	padding: 0;
+	line-height: 1;
+    display: flex;
+    align-items: center;
+}
+
+.venuesummary li h3 span
+{
+    margin-left: .5rem;
+}
+
+.venuesummary li li
+{
+	margin: 0;
+}
+
+.icon
+{
+    color:#04A75C !important;
+}
+
+</style>
+</head>
+
+<body>
+<section id="one">
+    <h1>LGBT+ Swim</h1>
+    <h2>Nottingham</h2>
+</section>
+<section id="two">
+        <div class="pull">Swimming sessions in Nottingham</div>
+    </section>
+<section id="main">
+        <ul class="venuesummary">
+                <li>
+                    <h3><i class="fas fa-users fa-2x icon"></i><span>Who it is for?</span></h3>
+                    <ul>
+                        <li>People of all sexualities and gender identities are welcome.</li>
+                    </ul>
+                </li>
+                <li>
+                        <h3><i class="fas fa-compass fa-2x icon"></i><span>Where is it?</span></h3>
+                        <ul>
+                            <li>Djanolgy Leisure Centre, Nottingham</li>
+                            <li><a href="{{ site.baseurl}}/venue/{{ page.venue-page }}">More info</a></li>
+                            <li><a href="#{{ page.venue-postcode }}">View map</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3><i class="fas fa-clock fa-2x icon"></i><span>When is it?</span></h3>
+                        <ul>
+                            <li>First Tuesday</li>
+                            <li>20:45 - 22:00</li>
+                            <li>Monthly</li>
+                        </ul>
+                    </li>
+        </ul>
+</section>
+</body>
+</html>
