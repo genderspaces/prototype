@@ -49,7 +49,9 @@ own-drink-allowed: true
 
 You'll need to [contact us](error.html) to book an appointment before you can come.
 
-Before your first appointment, you might want to write a list ahead of time with any questions you want to ask at your appointment. You can bring this with you to help you remember things. You can also email a copy to us in advance so we can make sure we have answers to your questions. If you're not sure what you want to ask, or you just want to talk to us, that's okay - we can help you think about things at your appointment.
+It is OK if you don't know exactly what you want to talk to us about. We can help you think about it when you arrive.
+
+If you do already know what you want to talk about, you might want to write a list beforehand and bring it with you. If you email a copy to us in advance, we can make sure we have answers to your questions.
 
 If you want to plan how you are getting to us ahead of time, there is information about public transport and parking on the [venue information page](/venue/ncas).
 
