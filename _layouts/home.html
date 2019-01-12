@@ -2,20 +2,18 @@
 layout: page
 ---
 
-<section class="highlight">
-	<h2>
-    	Gender diverse communities in {{ site.location }}
-  	</h2>
-</section>
-<section class="white">
+<section>
 <h3>What we offer</h3>
-<ul>
+<ul class="events">
 {% for event in site.events %}
 <li>
-<h3><a href="{{ event.url }}">{{ event.title }}</a></h3>
+<h4><a href="{{ event.url }}">{{ event.title }}</a></h4>
 <p>{{ event.quick-description }}</p>
 </li>
 {% endfor %}
 </ul>
-</section>
+
 {% include inclusivity.html %}
+
+{{ content }}
+</section>

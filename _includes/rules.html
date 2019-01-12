@@ -1,0 +1,23 @@
+<div id="rules">
+  <h3 class="rulesheader">Not allowed at this event</h3>
+  <ul class="iconlist">
+  {% for rule in page.forbidden %}
+    {% if site.data.rules.rules[rule] %}
+    <li>
+      <h4>
+        {% if site.data.rules.rules[rule].icon %}
+        <img class="fa-4x icon" src="/assets/icons/{{ site.data.rules.rules[rule].icon }}.svg"></img>
+        {% else %}
+        <i class="fas fa-square fa-4x icon"></i>
+        {% endif %}
+        {{ site.data.rules.rules[rule].title }}
+      </h4>
+      {% if site.data.rules.rules[rule].note %}
+      <p>{{ site.data.rules.rules[rule].note }}</p>
+      {% endif %}
+    </li>
+    {% endif %}
+  {% endfor %}
+  </ul>
+  <p>Anyone breaking these rules may be asked to leave or not to attend future events.</p>
+</div>

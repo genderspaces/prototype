@@ -1,14 +1,15 @@
 ---
 
-title: Individual support for autistic people
+title: Swimming sessions
+titleimage: pool2.jpg
 
 # Summary information
-quick-description: Private sessions to talk about your gender with expert volunteers
+quick-description: Group trips to public swimming sessions, open to all sexualities and gender identities
 
 audience: "Autistic people. You do not need an autism diagnosis to come."
 also-welcome: ""
 
-appointment-only: true
+appointment-only: false
 
 venue-name: "Nottingham City Asperger Service"
 venue-page: "ncas"
@@ -50,11 +51,7 @@ own-drink-allowed: true
 
 ### Before you come
 
-You'll need to [contact us](error.html) to book an appointment before you can come.
-
-It is OK if you don't know exactly what you want to talk to us about. We can help you think about it when you arrive.
-
-If you do already know what you want to talk about, you might want to write a list beforehand and bring it with you. If you email a copy to us in advance, we can make sure we have answers to your questions.
+TODO
 
 If you want to plan ahead how you are getting to the venue, there is information about public transport and parking on the [venue information page](/venue/ncas).
 

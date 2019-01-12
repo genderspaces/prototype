@@ -2,8 +2,8 @@
 ---
 
 // Colours
-$themeColour = {{ site.theme_colour1 }}
-$themeColourLight = {{ site.theme_colour2 }}
+$themeColour = {{ site.theme_colour }}
+$themeColourLight = {{ site.theme_colour_light }}
 
 // Fonts
 @font-face 
@@ -30,13 +30,24 @@ body
 a, a:visited, a:hover
 	color: $themeColour
 
-h1
-	a
-		text-decoration: none
+h1, h2
+  margin: 0
 
 h2
 	font-style: italic
 
+header, section, footer
+  margin: 0
+  padding: 1rem
+
+h1, h2, h3, p, ul, div, .iconlist, .inclusivity
+  max-width: 48rem
+
+@media screen and (min-width: 740px)
+	header, section, footer
+		padding: 2rem 4rem
+
 @import "assets/css/header.styl"
 @import "assets/css/page.styl"
 @import "assets/css/footer.styl"
+@import "assets/css/icons.styl"

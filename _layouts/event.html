@@ -2,20 +2,14 @@
 layout: page
 ---
 
-<section class="highlight">
-	<h2>
-    	<em>{{ page.title }}</em>
-  	</h2>
-</section>
-
-<section class="dark">
-	<ul class="venuesummary">
+<section>
+	<ul class="iconlist">
 		<li>
 			<h3><i class="fas fa-info-circle fa-2x icon"></i><span>What is it?</span></h3>
 			<p>{{ page.quick-description }}</p>
 		</li>
 		<li>
-			<h3><i class="fas fa-users fa-2x icon"></i><span>Who it is for</span></h3>
+			<h3><i class="fas fa-users fa-2x icon"></i><span>Who is it for?</span></h3>
 			<ul>
 				<li>{{ page.audience }}</li>
 			</ul>
@@ -23,8 +17,12 @@ layout: page
 		<li>
 			<h3><i class="fas fa-question-circle fa-2x icon"></i><span>Can I come?</span></h3>
 			<ul>
-				<li>You need an appointment to come.</li>
-				<li><a href="{{ page.contact }}">Email for an appointment</a></li>
+				{% if page.appointment-only %}
+					<li>You need an appointment to come.</li>
+					<li><a href="{{ page.contact }}">Email for an appointment</a></li>
+				{% else %}
+					<li>Anyone can attend - feel free to just turn up!</li>
+				{% endif %}
 			</ul>
 		</li>
 		<li>
@@ -66,31 +64,13 @@ layout: page
 			</ul>
 		</li>
 	</ul>
-</section>
+
 {% include inclusivity.html %}
-<section>
+
 {{ content }}
-</section>
-<section class="dark" id="rules">
-<h3 class="rulesheader">Not allowed</h3>
-	<ul class="rules">
-	{% for rule in page.forbidden %}
-		{% if site.data.rules.rules[rule] %}
-		<li>
-			{% if site.data.rules.rules[rule].icon %}
-			<img class="fa-4x icon" src="/assets/icons/{{ site.data.rules.rules[rule].icon }}.svg"></img>
-			{% else %}
-			<i class="fas fa-square fa-4x icon"></i>
-			{% endif %}
-			<h3>{{ site.data.rules.rules[rule].title }}</h3>
-			{% if site.data.rules.rules[rule].note %}
-			<p>{{ site.data.rules.rules[rule].note }}</p>
-			{% endif %}
-		</li>
-		{% endif %}
-	{% endfor %}
-</section>
-<section class="black">
+
+{% include rules.html %}
+
 <h3>More information</h3>
 <p>Got any worries or concerns about attending? We'd love to answer any of your questions we can - please <a href="#">get in touch</a>.</p>
 </section>
