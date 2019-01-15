@@ -1,10 +1,10 @@
 ---
 
-title: NCAS
+title: Djanogly Community Leisure Centre
 description: Nottingham City Asperger Service is located within Highbury Hopsital, around 5km north of Nottingham city centre. 
 website: https://www.nottinghamshirehealthcare.nhs.uk/asperger-service-nottingham-city
 address: "The Pines, Highbury Hospital"
-postcode: "NG6 9DR"
+postcode: "NG7 6ND"
 map: "https://goo.gl/maps/KtTmKZkvE3u"
 
 buses: "Highbury Hospital bus stop is around 200m walk away from the venue. The 68 and 69 buses buses serve this stop and travel to/from central Nottingham."
@@ -36,19 +36,16 @@ background-music: false
 no-flash-photography: true
 lighting-type: "This would say what types of lighting are used in the venue."
 street-lighting: ""
-large-print-resources: false
-braille-resources: false
-audio-resources: false
+resources: false
 
-level-access-street-to-entrance: "true?????"
-level-access-to: "todo"
+physical-accessibility: |
+    More information about venue accessibility should go here. This space is for futher, more detailed information that may be useful to people with physical disabilities.
+
+    For example:
+
+    - emergency evacuation
+    - level access
+    - lifts (size? areas not served?)
 
 ---
 
-TODOs:
-	- low lighting warnings?
-	- emergency evacuation
-	- lifts
-		- size
-		- any areas not served?
-More information about venue accessibility should go here. This space is for futher, more detailed information that may be useful to people with physical disabilities.

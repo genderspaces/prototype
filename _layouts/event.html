@@ -6,62 +6,56 @@ layout: page
 	<ul class="iconlist">
 		<li>
 			<h3><i class="fas fa-info-circle fa-2x icon"></i><span>What is it?</span></h3>
-			<p>{{ page.quick-description }}</p>
+			{{ page.quick-description | markdownify }}
 		</li>
 		<li>
 			<h3><i class="fas fa-users fa-2x icon"></i><span>Who is it for?</span></h3>
-			<ul>
-				<li>{{ page.audience }}</li>
-			</ul>
+			{{ page.audience | markdownify }}
 		</li>
 		<li>
 			<h3><i class="fas fa-question-circle fa-2x icon"></i><span>Can I come?</span></h3>
-			<ul>
-				{% if page.appointment-only %}
-					<li>You need an appointment to come.</li>
-					<li><a href="{{ page.contact }}">Email for an appointment</a></li>
-				{% else %}
-					<li>Anyone can attend - feel free to just turn up!</li>
-				{% endif %}
-			</ul>
+
+			{% if page.appointment-only %}
+				<p>You need an appointment to come.</li>
+				<p>Please <a href="{{ page.contact }}">email for an appointment</a></li>
+			{% else %}
+				<p>Anyone can attend - feel free to just turn up!</p>
+			{% endif %}
+
 		</li>
 		<li>
 			<h3><i class="fas fa-compass fa-2x icon"></i><span>Where is it?</span></h3>
-			<ul>
-				<li>{{ page.venue-name }}</li>
-				<li><a href="{{ site.baseurl}}/venue/{{ page.venue-page }}">More info</a></li>
-				<li><a href="#{{ page.venue-postcode }}">View map</a></li>
-			</ul>
+			{% for venue in site.venues %}
+				{% if venue.url == page.venue-page %}
+					<p>{{ venue.title }}</p>
+					<p><a href="{{ site.baseurl}}{{ venue.url }}">More information about the venue</a></p>
+					<p><a href="{{ venue.map }}">View a map</a></p>
+				{% endif %}
+			{% endfor %}
 		</li>
 		<li>
 			<h3><i class="fas fa-clock fa-2x icon"></i><span>When is it?</span></h3>
-			<ul>
-				<li>{{ page.day }}</li>
-				<li>{{ page.time-start }} - {{ page.time-end }}</li>
-				<li>{{ page.frequency }}</li>
-			</ul>
+			<p>{{ page.day }}</p>
+			<p>{{ page.time-start }} - {{ page.time-end }}</p>
+			<p>{{ page.frequency }}</p>
 		</li>
 		<li>
 			<h3><i class="fas fa-pound-sign fa-2x icon"></i><span>Cost</span></h3>
 			{% if page.free %}
 			<p>Free</p>
 			{% else %}
-			<p>{{ page.cost }}</p>
+				{{ page.cost | markdownify }}
 			{% endif %}
 		</li>
 		<li>
 			<h3><i class="fas fa-exclamation-circle fa-2x icon"></i><span>Rules</span></h3>
-			<ul>
-				<li>You need to follow some rules at this event.</li>
-				<li><a href="#rules">More info</a></li>
-			</ul>
+			<p>You need to follow some rules at this event.</p>
+			<p><a href="#rules">More info</a></p>
 		</li>
 		<li>
 			<h3><i class="fas fa-envelope-open fa-2x icon"></i><span>Contact</span></h3>
-			<ul>
-				<li>Got more questions?</li>
-				<li><a href="{{ page.contact }}">Email for help</a></li>
-			</ul>
+			<p>Got more questions?</p>
+			<p><a href="{{ page.contact }}">Email for help</a></p>
 		</li>
 	</ul>
 

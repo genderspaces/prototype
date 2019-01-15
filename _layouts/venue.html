@@ -3,182 +3,137 @@ layout: page
 ---
 
 <section>
-	<p>{{ page.address }} {{ page.postcode }}</p>
-	<p><a href="#">Area map</a></p>
-
 	<ul class="iconlist">
 		<li>
-				<h3><i class="fas fa-map-pin fa-2x icon"></i> Where is it?</h3>
-				<ul>
-					<li>{{ page.description }}</li>
-					<li>The address is {{ page.address }}, {{ page.postcode }}.</li>
-					<li>More information is available on the <a href="{{ page.website }}">{{ page.title }} website</a></li>
-				</ul>
+			<h3><i class="fas fa-map-pin fa-2x icon"></i> Where is it?</h3>
+			{{ page.description | markdownify }}
+			<p><a href="{{ page.map }}">View on a map</a></p>
+			<p>The address is {{ page.address }}, {{ page.postcode }}.</p>
 		</li>
 		<li>
-				<h3><i class="fas fa-bus fa-2x icon"></i> Public transport</h3>
-				<ul>
-					{% if page.buses %}<li><em>Bus:</em> {{ page.buses }}</li>{% endif %}
-					{% if page.tram %}<li><em>Tram:</em> {{ page.tram }}</li>{% endif %}
-					{% if page.public-transport-greeting %}<li>We are happy to arrange to greet you at a nearby stop if you travelling here for the first time. Please <a href="#">get in touch</a> if this would be helpful to you.</li>{% endif %}
-				</ul>
+			<h3><i class="fas fa-bus fa-2x icon"></i> Public transport</h3>
+			{% if page.buses %}<p><em>Bus:</em> {{ page.buses }}</p>{% endif %}
+			{% if page.tram %}<p><em>Tram:</em> {{ page.tram }}</p>{% endif %}
+			{% if page.public-transport-greeting %}<p>We are happy to arrange to greet you at a nearby stop if you travelling here for the first time. Please <a href="#">get in touch</a> if this would be helpful to you.</p>{% endif %}
 		</li>
 		<li>
-				<h3><i class="fas fa-car fa-2x icon"></i> Parking</h3>
-				<p>{{ page.car-parking }}</p>
+			<h3><i class="fas fa-car fa-2x icon"></i> Parking</h3>
+			<p>{{ page.car-parking }}</p>
 		</li>
 		<li>
-				<h3><i class="fas fa-utensils fa-2x icon"></i> Food and drink</h3>
-				<ul>
-				<li>{{ page.food-availability }}</li>
-				<li>{{ page.drink-availability }}</li>
-				<li>Please do not bring alcohol.</li>
-				</ul>
+			<h3><i class="fas fa-utensils fa-2x icon"></i> Food and drink</h3>
+			{{ page.food-availability | markdownify }}
+			{{ page.drink-availability | markdownify }}
+			<p>Please do not bring alcohol.</p>
 		</li>
 		<li>
-				<h3><i class="icon fa-2x">🚽</i> Toilets</h3>
-				<ul>
-					<li>
-						{% if page.gender-neutral-toilet %}
-							<em>Gender-neutral</em> toilets are available.
-						{% else %}
-							<em>Gender-neutral</em> toilets are <em>not</em> available.
-						{% endif %}
-					</li>
-					{% if page.disabled-toilet %}
-					<li>
-							<em>Disabled</em> toilets are available. 
-					</li>
-					<li>
-							Please <a href="#">get in touch</a> if you need more detailed information about the disabled toilet.
-					</li>
-					{% else %}
-						<li><em>Disabled</em> toilets are <em>not</em> available.
-					{% endif %}
-					<li>
-						{% if page.changing-spaces %}
-							A <a href="http://www.changing-places.org/">Changing Places</a> facility is available at this venue, with a changing bench and a hoist.
-						{% else %}
-							There is no <a href="http://www.changing-places.org/">Changing Places</a> facility available at this location. <a href="http://changingplaces.uktoiletmap.org/find?toiletLocation={{ page.postcode }}">Find a nearby Changing Spaces facility</a>.
-						{% endif %}
-					</li>
-				</ul>
+			<h3><i class="icon fa-2x">🚽</i> Toilets</h3>
+			
+			{% if page.gender-neutral-toilet %}
+				<p><em>Gender-neutral</em> toilets are available.</p>
+			{% else %}
+				<p><em>Gender-neutral</em> toilets are <em>not</em> available.</p>
+			{% endif %}
+
+			{% if page.disabled-toilet %}
+				<p><em>Disabled</em> toilets are available.</p>
+				<p>Please <a href="#">get in touch</a> if you need more detailed information about the disabled toilet.</p>
+			{% else %}
+				<p><em>Disabled</em> toilets are <em>not</em> available.</p>
+			{% endif %}
+			
+			{% if page.changing-spaces %}
+				<p>A <a href="http://www.changing-places.org/">Changing Places</a> facility is available at this venue, with a changing bench and a hoist.</p>
+			{% else %}
+				<p>There is no <a href="http://www.changing-places.org/">Changing Places</a> facility available at this location. <a href="http://changingplaces.uktoiletmap.org/find?toiletLocation={{ page.postcode }}">Find a nearby Changing Spaces facility</a>.</p>
+			{% endif %}
 		</li>
 		<li>
-				<h3><i class="fas fa-smoking fa-2x icon"></i> Smoking</h3>
-				<ul>
-					{% if page.smoking-area %}
-					<li>
-						A smoking area is available outside.
-					</li>
-					{% endif %}
-					<li>
-						Please do not smoke or vape inside the venue.
-					</li>
-				</ul>
+			<h3><i class="fas fa-smoking fa-2x icon"></i> Smoking</h3>
+			<p>Please do not smoke or vape inside the venue.</p>
+			{% if page.smoking-area %}
+				<p>A smoking area is available outside.</p>
+			{% endif %}
 		</li>
 		<li>
 			<h3><i class="fas fa-child fa-2x icon"></i> Babies and children</h3>
-			<ul>
-				<li>
-					You are welcome to breast feed here.
-				</li>
-				{% if page.baby-changing %}
-				<li>
-					Baby changing facilities are available.
-				</li>
-				{% else %}
-				<li>
-					Sorry, no baby changing facilities are available.
-				</li>
-				{% endif %}
-			</ul>
+			<p>You are welcome to breast feed here.</p>
+			{% if page.baby-changing %}
+				<p>Baby changing facilities are available.</p>
+			{% else %}
+				<p>Sorry, no baby changing facilities are available.</p>
+			{% endif %}
 		</li>
 		<li>
 			<h3><i class="fas fa-deaf fa-2x icon"></i> Hearing and sound</h3>
-			<ul>
-				<li>
-					Assistance animals are welcome.
-				</li>
-				<li>
-					{% if page.induction-loop %}
-						An induction loop system is installed.
-					{% else %}
-						Sorry, no induction loop system is installed.
-					{% endif %}
-				</li>
-				<li>
-					{% if page.sign-language-interpreter %}
-						A sign-language interpreter is available.
-					{% else %}
-						Unforunately we are unable to provide sign-language interpreting at this venue.
-					{% endif %}
-				</li>
-				{% if page.quiet-area %}
-				<li>
-					A quiet area is available.
-				</li>
-				{% endif %}
-			</ul>
+			<p>Assistance animals are welcome.</p>
+			{% if page.induction-loop %}
+				<p>An induction loop system is installed.</p>
+			{% else %}
+				<p>Sorry, no induction loop system is installed.</p>
+			{% endif %}
+			
+			{% if page.sign-language-interpreter %}
+				<p>A sign-language interpreter is available.</p>
+			{% else %}
+				<p>Unforunately we are unable to provide sign-language interpreting at this venue.</p>
+			{% endif %}
+				
+			{% if page.quiet-area %}
+				<p>A quiet area is available.</p>
+			{% endif %}
 		</li>
 		<li>
 			<h3><i class="fas fa-low-vision fa-2x icon"></i> Vision and light</h3>
-			<ul>
-				<li>
-					{% if page.no-flash-photography %}
-						No flash photography is permitted in this venue.
-					{% endif %}
-				</li>
-				<li>
-					{{ page.lighting-type }}
-				</li>
-				<li>
-					Assistance animals are welcome.
-				</li>
-				<li>
-					{% if page.large-print-resources %}
-						Large print versions of resources are available on request.
-					{% else %}
-						Sorry, large print versions of resources are not normally available.
-					{% endif %}
-				</li>
-				<li>
-					{% if page.braille-resources %}
-						Braille versions of resources are available on request.
-					{% else %}
-						Sorry, braille versions of resources are not normally available.
-					{% endif %}
-				</li>
-				<li>
-					{% if page.audio-resources %}
-						Audio versions of resources are available on request.
-					{% else %}
-						Sorry, audio versions of resources are not normally available.
-					{% endif %}
-				</li>
-			</ul>
+			
+			{% if page.no-flash-photography %}
+				<p>No flash photography is permitted in this venue.</p>
+			{% endif %}
+			
+			{{ page.lighting-type | markdownify }}
+			
+			<p>Assistance animals are welcome.</p>
+
+			{% if page.resources %}
+				{% if page.resources.large-print %}
+					<p>Large print versions of resources are available on request.</p>
+				{% else %}
+					<p>Sorry, large print versions of resources are not normally available.</p>
+				{% endif %}
+
+				{% if page.resources.braille %}
+					<p>Braille versions of resources are available on request.</p>
+				{% else %}
+					<p>Sorry, braille versions of resources are not normally available.</p>
+				{% endif %}
+
+				{% if page.resources.audio %}
+					<p>Audio versions of resources are available on request.</p>
+				{% else %}
+					<p>Sorry, audio versions of resources are not normally available.</p>
+				{% endif %}
+			{% endif %}	
 		</li>
 		<li>
 			<h3><i class="fab fa-accessible-icon fa-2x icon"></i> Physical disabilities</h3>
-			<ul>
-				<li>
-					{% if page.disabled-toilet %}
-						Disabled toilet facilities are available. Please <a href="#">get in touch</a> if you need more detailed information about the disabled toilet.
-					{% else %}
-						No disabled toilet facilities are available.
-					{% endif %}
-				</li>
-				<li>
-					{% if page.changing-spaces %}
-						A <a href="http://www.changing-places.org/">Changing Places</a> facility is available at this venue, with a changing bench and a hoist.
-					{% else %}
-						There is no <a href="http://www.changing-places.org/">Changing Places</a> facility available at this location. <a href="http://changingplaces.uktoiletmap.org/find?toiletLocation={{ page.postcode }}">Find a nearby Changing Spaces facility</a>.
-					{% endif %}
-				</li>
-			</ul>
+
+			{% if page.disabled-toilet %}
+				<p>Disabled toilet facilities are available. Please <a href="#">get in touch</a> if you need more detailed information about the disabled toilet.</p>
+			{% else %}
+				<p>No disabled toilet facilities are available.</p>
+			{% endif %}
+
+			{% if page.changing-spaces %}
+				<p>A <a href="http://www.changing-places.org/">Changing Places</a> facility is available at this venue, with a changing bench and a hoist.</p>
+			{% else %}
+				<p>There is no <a href="http://www.changing-places.org/">Changing Places</a> facility available at this location. <a href="http://changingplaces.uktoiletmap.org/find?toiletLocation={{ page.postcode }}">Find a nearby Changing Spaces facility</a>.</p>
+			{% endif %}
+
+			{{ page.physical-accessibility | markdownify}}
 		</li>
 	</ul>
 	<p>{{ content }}</p>
 	<h3>More information</h3>
-	<p>Got any worries or concerns about attending? We'd love to answer any of your questions we can - please <a href="#">get in touch</a>.</p>
+	<p>More information about the venue is available on the <a href="{{ page.website }}">{{ page.title }} website</a>.</p>
+	<p>If you can't find the answer to your question there, please do get in touch with us and we'd be happy to help you.</p>
 </section>

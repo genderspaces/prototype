@@ -10,9 +10,7 @@ also-welcome: ""
 
 appointment-only: true
 
-venue-name: "Nottingham City Asperger Service"
-venue-page: "ncas"
-venue-postcode: "NG6 9DR"
+venue-page: "/venue/ncas/"
 
 day: "Tuesday"
 time-start: "18:00"

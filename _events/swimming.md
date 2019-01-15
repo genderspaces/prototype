@@ -11,17 +11,15 @@ also-welcome: ""
 
 appointment-only: false
 
-venue-name: "Nottingham City Asperger Service"
-venue-page: "ncas"
-venue-postcode: "NG6 9DR"
+venue-page: "/venue/dclc/"
 
 day: "Tuesday"
 time-start: "18:00"
 time-end: "20:00"
 frequency: "Twice monthly"
 
-free: true
-cost: "n/a"
+free: false
+cost: "£999 or £998 if you have [a thingey](/venue/ncas)"
 
 contact: "genderspaces@gmail.com"
 
@@ -53,7 +51,7 @@ own-drink-allowed: true
 
 TODO
 
-If you want to plan ahead how you are getting to the venue, there is information about public transport and parking on the [venue information page](/venue/ncas).
+If you want to plan ahead how you are getting to the venue, there is information about public transport and parking on the [venue information page](/venue/dclc).
 
 Let us know if you need to visit the venue in advance for any reason.
 
@@ -69,13 +67,13 @@ When you arrive, stuff.
 
 ### What to expect
 
-Who is running the event and how to recognise them
-Who else will be there
-Roughly how many people
-What the planned schedule is
-What the rules are for the space
-What to do if you are experiencing problems
-What to do if you need to leave early
+- Who is running the event and how to recognise them
+- Who else will be there
+- Roughly how many people
+- What the planned schedule is
+- What the rules are for the space
+- What to do if you are experiencing problems
+- What to do if you need to leave early
 
 ### Leaving
 
