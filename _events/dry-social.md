@@ -1,6 +1,7 @@
 ---
 
 title: Social space
+thumbnail: snappy-booth-nappy-.jpg
 
 # Summary information
 quick-description: No-alcohol social event for people of all sexualities and gender identities

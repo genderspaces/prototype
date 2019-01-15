@@ -1,9 +1,10 @@
 ---
 
 title: Individual support for autistic people
+thumbnail: brooke-cagle-1181671-unsplash.jpg
 
 # Summary information
-quick-description: Private sessions to talk about your gender with expert volunteers
+quick-description: Private sessions with expert volunteers to talk about gender
 
 audience: "Autistic people. You do not need an autism diagnosis to come."
 also-welcome: ""

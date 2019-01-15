@@ -2,9 +2,10 @@
 
 title: Swimming sessions
 titleimage: pool2.jpg
+thumbnail: angelo-pantazis-690601-unsplash.jpg
 
 # Summary information
-quick-description: Group trips to public swimming sessions, open to all sexualities and gender identities
+quick-description: Swimming sessions for all sexualities and gender identities
 
 audience: "Autistic people. You do not need an autism diagnosis to come."
 also-welcome: ""
