@@ -53,7 +53,7 @@ You'll need to [contact us](error.html) to book an appointment before you can co
 
 It is OK if you don't know exactly what you want to talk to us about. We can help you think about it when you arrive.
 
-If you do already know what you want to talk about, you might want to write a list beforehand and bring it with you. If you email a copy to us in advance, we can make sure we have answers to your questions.
+If you already know what you want to talk about, you might want to write a list beforehand, and bring it with you to help you remember. If you email a copy to us in advance we can make sure we have answers to your questions.
 
 If you want to plan ahead how you are getting to the venue, there is information about public transport and parking on the [venue information page](/venue/ncas).
 
@@ -71,13 +71,13 @@ When you arrive, stuff.
 
 ### What to expect
 
-Who is running the event and how to recognise them
-Who else will be there
-Roughly how many people
-What the planned schedule is
-What the rules are for the space
-What to do if you are experiencing problems
-What to do if you need to leave early
+- Who is running the event and how to recognise them
+- Who else will be there
+- Roughly how many people
+- What the planned schedule is
+- What the rules are for the space
+- What to do if you are experiencing problems
+- What to do if you need to leave early
 
 ### Leaving
 
